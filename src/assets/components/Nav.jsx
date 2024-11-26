@@ -26,7 +26,7 @@ export default function Nav() {
   return (
     <nav className=" container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container">
-        <a className="navbar-brand" href="#"><h1 className="title">Tech Gamer Store
+        <a className="navbar-brand" href="#"><h1 className="title">MultyShop
         <div className="aurora">
       <div className="aurora__item"></div>
       <div className="aurora__item"></div>

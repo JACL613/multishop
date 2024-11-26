@@ -33,19 +33,26 @@ const handleSubmit = (e) => {
     })
 }
   return (
+    
+    
     <div>
+        
       <section>
         <h2>Registro</h2>
         <form onSubmit={handleSubmit} id="signupForm">
-            <label>Nombre</label>
-            <input type="text" placeholder="..." id="name" required autoFocus />
-            <label>Mail</label>
-            <input type="email" placeholder="..." id="email" required />
-            <label>Contraseña</label>
-            <input type="password" placeholder="..." id="password" required />
-            <input type="submit" value="Registro"/>
+        <span className='user'><User size={48} strokeWidth={3} /></span>
+            
+            <div className="input-group">
+              <span ><Mail size={48} strokeWidth={3} /></span>
+              <input type="email" placeholder="Ej: juanita@gmail.com" id="email" required autoFocus />
+            </div>
+            <div className="input-group">
+              <span ><Lock size={48} strokeWidth={3} /></span>
+              <input type="password" placeholder="" id="password" required />
+            </div>
+            <button type="submit" className="submit-button">Registrar</button>
         </form>
-        <p>Ya tienes una cuenta? <Link to='/login'>Login</Link></p>
+        <p>Ya tienes una cuenta? <Link to='/login'>Inicio</Link></p>
     </section>
     </div>
   )

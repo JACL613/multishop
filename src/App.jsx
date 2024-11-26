@@ -55,7 +55,9 @@ function App() {
           <Banner desktopImages={desktop} mobileImages={mobile}/>
         }/>
         <Route path='/productos' element={
+          <>
           <GalleryProducts />
+          </>
         }/>
         <Route path='/contacto' element={
           <FormContact />
