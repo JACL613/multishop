@@ -2,6 +2,7 @@ import { ArrowRightEndOnRectangleIcon, ShoppingCartIcon } from '@heroicons/react
 import '../animations/style.css'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+
 export default function Nav() {
     const [productos , setProductos] = useState(JSON.parse(localStorage.getItem('productosCarrito') )|| [])
     const [login , setLogin] = useState(JSON.parse(localStorage.getItem('login_success')) || false)
@@ -26,7 +27,7 @@ export default function Nav() {
   return (
     <nav className=" container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container">
-        <a className="navbar-brand" href="#"><h1 className="title">Tech Gamer Store
+        <a className="navbar-brand" href="#"><h1 className="title">MULTYSHOP
         <div className="aurora">
       <div className="aurora__item"></div>
       <div className="aurora__item"></div>
@@ -55,7 +56,7 @@ export default function Nav() {
                     <Link className="nav-link" to="/productos">Productos</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to='/contacto' >Contacto</Link>
+                    <Link className="nav-link" to='/PQRS' >PQRS</Link>
                 </li>
                 <li className="nav-item">
                     {!login 

@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Banner from './assets/components/Banner'
-import FormContact from './assets/components/FormContact'
 import Nav from './assets/components/Nav'
 import img1 from './assets/images/desktop/img1.jpg'
 import img2 from './assets/images/desktop/img2.jpg'
@@ -13,8 +12,8 @@ import GalleryProducts from './assets/components/GalleryProducts'
 import Login from './assets/components/Login'
 import Register from './assets/components/Register'
 import Table from './assets/components/TableCarrito'
+import PQRSForm from './assets/components/pqrs'
 function App() {
-
   const desktop = [
     {
      src: img1,
@@ -55,10 +54,11 @@ function App() {
           <Banner desktopImages={desktop} mobileImages={mobile}/>
         }/>
         <Route path='/productos' element={
+          
           <GalleryProducts />
         }/>
-        <Route path='/contacto' element={
-          <FormContact />
+        <Route path='/PQRS' element={
+          <PQRSForm />
         }/>
         <Route path='/login' element={
           <Login/>
@@ -77,3 +77,4 @@ function App() {
 }
 
 export default App
+

@@ -66,3 +66,222 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.pqrs-form {
+  max-width: 500px;
+  margin: 50px auto; /* Centramos verticalmente con margen superior */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Ajusté el borde redondeado para un mejor diseño */
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Asegura que los elementos del formulario estén centrados */
+}
+
+.pqrs-form h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px; /* Agregado para separar el título de los inputs */
+}
+
+.pqrs-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Asegura que el formulario ocupe el 100% de su contenedor */
+}
+
+.pqrs-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.pqrs-form input,
+.pqrs-form select,
+.pqrs-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #0f0e0e;
+  border-radius: 20px; /* Borde redondeado para todos los campos */
+  width: 100%; /* Hace que los campos se ajusten al ancho del formulario */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho */
+}
+
+.pqrs-form textarea {
+  resize: vertical; /* Permite redimensionar solo de forma vertical */
+  min-height: 100px; /* Altura mínima del textarea */
+  max-height: 300px; /* Altura máxima del textarea */
+}
+
+.pqrs-form .error {
+  color: red;
+  font-size: 12px;
+}
+
+.pqrs-form button {
+  padding: 10px;
+  background-color: #080808;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* El botón ocupa todo el ancho disponible */
+}
+
+.pqrs-form button:hover {
+  background-color: grey;
+}
+
+
+/* Contenedor principal de la página de productos */
+.product-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor que envuelve tanto la lista de productos como el filtro */
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+/* Contenedor de los productos */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%; /* Ajusta el ancho según tus necesidades */
+  gap: 20px;
+}
+
+/* Cada producto */
+.product {
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product h3 {
+  font-size: 18px;
+}
+
+.product p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Estilos del filtro */
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #ff6347; /* Color de hover */
+}
+
+/* Espacio debajo de la navbar */
+body {
+  padding-top: 70px; /* Para no tapar el contenido con la navbar */
+}
+
+/* Contenedor principal de la página de productos */
+.product-page {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Contenedor de los productos */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 75%; /* Ajusta el ancho de los productos según tus necesidades */
+}
+
+/* Estilos de cada producto */
+.product {
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product h3 {
+  font-size: 18px;
+}
+
+.product p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+}
+
